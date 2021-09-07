@@ -1,0 +1,10 @@
+E:\Desktop_App\Blood_Bank\Blood_Bank\bin\Debug\Blood_Bank.exe.config
+E:\Desktop_App\Blood_Bank\Blood_Bank\bin\Debug\Blood_Bank.exe
+E:\Desktop_App\Blood_Bank\Blood_Bank\bin\Debug\Blood_Bank.pdb
+E:\Desktop_App\Blood_Bank\Blood_Bank\obj\Debug\Blood_Bank.frmhome.resources
+E:\Desktop_App\Blood_Bank\Blood_Bank\obj\Debug\Blood_Bank.Properties.Resources.resources
+E:\Desktop_App\Blood_Bank\Blood_Bank\obj\Debug\Blood_Bank.csproj.GenerateResource.Cache
+E:\Desktop_App\Blood_Bank\Blood_Bank\obj\Debug\Blood_Bank.exe
+E:\Desktop_App\Blood_Bank\Blood_Bank\obj\Debug\Blood_Bank.pdb
+E:\Desktop_App\Blood_Bank\Blood_Bank\obj\Debug\Blood_Bank.UI.frmUsers.resources
+E:\Desktop_App\Blood_Bank\Blood_Bank\obj\Debug\Blood_Bank.csprojResolveAssemblyReference.cache
