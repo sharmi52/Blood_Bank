@@ -244,5 +244,26 @@ namespace Blood_Bank.UI
                 }
             }
         }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            //Write the Code to Get the Users Based on Keywords
+            //1. Get the Keywords from the Textbox
+            String keywords = txtSearch.Text;
+
+            //Check whether the Textbox is Empty or not
+            if (keywords!=null)
+            {
+                //Textbox is not Empty, Display Users on Data Grid View Based on the Keywords
+                DataTable dt = dal.Search(keywords);
+                dgvUsers.DataSource = dt;
+            }
+            else
+            {
+                //Textbox is Empty and Display All the Users on Data Grid View
+                DataTable dt = dal.Select();
+                dgvUsers.DataSource = dt;
+            }
+        }
     }
 }
