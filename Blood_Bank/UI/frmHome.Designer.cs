@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmhome));
             this.menuStripTop = new System.Windows.Forms.MenuStrip();
             this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.donersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.donorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelfooter = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -98,7 +98,7 @@
             this.menuStripTop.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStripTop.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.usersToolStripMenuItem,
-            this.donersToolStripMenuItem});
+            this.donorsToolStripMenuItem});
             this.menuStripTop.Location = new System.Drawing.Point(0, 0);
             this.menuStripTop.Name = "menuStripTop";
             this.menuStripTop.Padding = new System.Windows.Forms.Padding(6, 10, 0, 10);
@@ -115,13 +115,14 @@
             this.usersToolStripMenuItem.Text = "Users";
             this.usersToolStripMenuItem.Click += new System.EventHandler(this.usersToolStripMenuItem_Click);
             // 
-            // donersToolStripMenuItem
+            // donorsToolStripMenuItem
             // 
-            this.donersToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.donersToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.donersToolStripMenuItem.Name = "donersToolStripMenuItem";
-            this.donersToolStripMenuItem.Size = new System.Drawing.Size(76, 25);
-            this.donersToolStripMenuItem.Text = "Doners";
+            this.donorsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.donorsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.donorsToolStripMenuItem.Name = "donorsToolStripMenuItem";
+            this.donorsToolStripMenuItem.Size = new System.Drawing.Size(77, 25);
+            this.donorsToolStripMenuItem.Text = "Donors";
+            this.donorsToolStripMenuItem.Click += new System.EventHandler(this.donorsToolStripMenuItem_Click);
             // 
             // panelfooter
             // 
@@ -188,9 +189,9 @@
             this.lblName.ForeColor = System.Drawing.Color.MediumBlue;
             this.lblName.Location = new System.Drawing.Point(137, 44);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(60, 21);
+            this.lblName.Size = new System.Drawing.Size(61, 21);
             this.lblName.TabIndex = 2;
-            this.lblName.Text = "Doners";
+            this.lblName.Text = "Donors";
             // 
             // lblOpositiveCount
             // 
@@ -232,9 +233,9 @@
             this.label3.ForeColor = System.Drawing.Color.MediumBlue;
             this.label3.Location = new System.Drawing.Point(137, 44);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 21);
+            this.label3.Size = new System.Drawing.Size(61, 21);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Doners";
+            this.label3.Text = "Donors";
             // 
             // lblOnegativeCount
             // 
@@ -276,9 +277,9 @@
             this.label6.ForeColor = System.Drawing.Color.MediumBlue;
             this.label6.Location = new System.Drawing.Point(137, 44);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(60, 21);
+            this.label6.Size = new System.Drawing.Size(61, 21);
             this.label6.TabIndex = 2;
-            this.label6.Text = "Doners";
+            this.label6.Text = "Donors";
             // 
             // lblApositiveCount
             // 
@@ -320,9 +321,9 @@
             this.label9.ForeColor = System.Drawing.Color.MediumBlue;
             this.label9.Location = new System.Drawing.Point(137, 44);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(60, 21);
+            this.label9.Size = new System.Drawing.Size(61, 21);
             this.label9.TabIndex = 2;
-            this.label9.Text = "Doners";
+            this.label9.Text = "Donors";
             // 
             // lblAnegativeCount
             // 
@@ -364,9 +365,9 @@
             this.label12.ForeColor = System.Drawing.Color.MediumBlue;
             this.label12.Location = new System.Drawing.Point(137, 44);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(60, 21);
+            this.label12.Size = new System.Drawing.Size(61, 21);
             this.label12.TabIndex = 2;
-            this.label12.Text = "Doners";
+            this.label12.Text = "Donors";
             // 
             // lblBpositiveCount
             // 
@@ -408,9 +409,9 @@
             this.label15.ForeColor = System.Drawing.Color.MediumBlue;
             this.label15.Location = new System.Drawing.Point(137, 44);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(60, 21);
+            this.label15.Size = new System.Drawing.Size(61, 21);
             this.label15.TabIndex = 2;
-            this.label15.Text = "Doners";
+            this.label15.Text = "Donors";
             // 
             // lblBnegativeCount
             // 
@@ -452,9 +453,9 @@
             this.label18.ForeColor = System.Drawing.Color.MediumBlue;
             this.label18.Location = new System.Drawing.Point(137, 44);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(60, 21);
+            this.label18.Size = new System.Drawing.Size(61, 21);
             this.label18.TabIndex = 2;
-            this.label18.Text = "Doners";
+            this.label18.Text = "Donors";
             // 
             // lblABpositiveCount
             // 
@@ -496,9 +497,9 @@
             this.label21.ForeColor = System.Drawing.Color.MediumBlue;
             this.label21.Location = new System.Drawing.Point(137, 44);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(60, 21);
+            this.label21.Size = new System.Drawing.Size(61, 21);
             this.label21.TabIndex = 2;
-            this.label21.Text = "Doners";
+            this.label21.Text = "Donors";
             // 
             // lblABnegativeCount
             // 
@@ -539,9 +540,9 @@
             this.lblSearch.ForeColor = System.Drawing.Color.SeaGreen;
             this.lblSearch.Location = new System.Drawing.Point(498, 64);
             this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(127, 25);
+            this.lblSearch.Size = new System.Drawing.Size(128, 25);
             this.lblSearch.TabIndex = 11;
-            this.lblSearch.Text = "Search Doner";
+            this.lblSearch.Text = "Search Donor";
             // 
             // txtSearch
             // 
@@ -657,7 +658,7 @@
 
         private System.Windows.Forms.MenuStrip menuStripTop;
         private System.Windows.Forms.ToolStripMenuItem usersToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem donersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem donorsToolStripMenuItem;
         private System.Windows.Forms.Panel panelfooter;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

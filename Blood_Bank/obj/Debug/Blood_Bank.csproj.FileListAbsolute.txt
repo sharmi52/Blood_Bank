@@ -8,3 +8,4 @@ E:\Desktop_App\Blood_Bank\Blood_Bank\obj\Debug\Blood_Bank.exe
 E:\Desktop_App\Blood_Bank\Blood_Bank\obj\Debug\Blood_Bank.pdb
 E:\Desktop_App\Blood_Bank\Blood_Bank\obj\Debug\Blood_Bank.UI.frmUsers.resources
 E:\Desktop_App\Blood_Bank\Blood_Bank\obj\Debug\Blood_Bank.csprojResolveAssemblyReference.cache
+E:\Desktop_App\Blood_Bank\Blood_Bank\obj\Debug\Blood_Bank.UI.frmDonors.resources
