@@ -124,6 +124,7 @@
             this.dgvDonors.Name = "dgvDonors";
             this.dgvDonors.Size = new System.Drawing.Size(512, 358);
             this.dgvDonors.TabIndex = 46;
+            this.dgvDonors.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvDonors_RowHeaderMouseClick);
             // 
             // btnClear
             // 
@@ -137,6 +138,7 @@
             this.btnClear.TabIndex = 45;
             this.btnClear.Text = "CLEAR";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnDelete
             // 
@@ -150,6 +152,7 @@
             this.btnDelete.TabIndex = 44;
             this.btnDelete.Text = "DELETE";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -163,6 +166,7 @@
             this.btnUpdate.TabIndex = 43;
             this.btnUpdate.Text = "UPDATE";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnAdd
             // 
@@ -176,6 +180,7 @@
             this.btnAdd.TabIndex = 42;
             this.btnAdd.Text = "ADD";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtAddress
             // 
@@ -298,6 +303,7 @@
             this.btnSelectImage.TabIndex = 27;
             this.btnSelectImage.Text = "Select Image";
             this.btnSelectImage.UseVisualStyleBackColor = true;
+            this.btnSelectImage.Click += new System.EventHandler(this.btnSelectImage_Click);
             // 
             // pictureBoxProfilePicture
             // 
@@ -405,6 +411,7 @@
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Donors";
+            this.Load += new System.EventHandler(this.frmDonors_Load);
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).EndInit();

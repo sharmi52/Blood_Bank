@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Blood_Bank.BLL;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -15,7 +16,7 @@ namespace Blood_Bank.DAL
         //Create a Connection String to Connect Database
         static string myconnstrng = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
         #region SELECT to Display Data in Datagridview from Database
-        public DataTable Select();
+        public DataTable Select()
         {
            // Create Object to DataTable to Hold the data from database and return it
            DataTable dt = new DataTable();
@@ -29,7 +30,7 @@ namespace Blood_Bank.DAL
           string sql = "SELECT * FROM tbl_donors";
 
          //Create the SqlCommand to Execute the Query
-         SqlCommand cmd = new SqlCommand(Sql, conn); 
+         SqlCommand cmd = new SqlCommand(sql, conn); 
 
         //Create the Sql Data Adapter to Hold the data Temporaly
          SqlDataAdapter adapter = new SqlDataAdapter(cmd);
@@ -37,9 +38,9 @@ namespace Blood_Bank.DAL
         //Open Database Connection
         conn.Open();
 
-       //Pass the Data from Adapter to DataTable
+        //Pass the Data from Adapter to DataTable
         adapter.Fill(dt);
-    }
+       }
         catch(Exception ex)
         {
             //Display Message if There's any Exceptional Errors
@@ -127,8 +128,8 @@ namespace Blood_Bank.DAL
 
             try
             {
-                //Create a SQL Query to Update Donors
-                string sql = "UPDATE tbl_donors SET first_name=@first_name, last_name=@last_name, email=@email, contact=@contact, gender=@gender, address=@address, blood_group=@blood_group, added_date=@added_date, image_name=@image_name, added_by=@added_by WHERE donor_id=@donor_id";
+                //Create a SQL Query to Update Donors  
+                string sql = "UPDATE tbl_donors SET first_name=@first_name, last_name=@last_name, email=@email, contact=@contact, gender=@gender, address=@address, blood_group=@blood_group,  image_name=@image_name, added_by=@added_by WHERE donor_id=@donor_id";
 
                 //Create Sql Command here
                 SqlCommand cmd = new SqlCommand(sql, conn);
