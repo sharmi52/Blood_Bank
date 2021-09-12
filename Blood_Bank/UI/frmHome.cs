@@ -1,4 +1,5 @@
-﻿using Blood_Bank.UI;
+﻿using Blood_Bank.DAL;
+using Blood_Bank.UI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,9 +19,27 @@ namespace Blood_Bank
             InitializeComponent();
         }
 
+        //Create the Object of Donors DAL
+        donorDAL dal = new donorDAL();
+
         private void frmhome_Load(object sender, EventArgs e)
         {
-            
+            //Load all the Blood Donors Count When Form is Loaded
+            //Call allDonorCountMethod
+            allDonorCount();
+        }
+
+        public void allDonorCount()
+        {
+            //Get the Donor Count from Database and set in Respective Label
+            lblOpositiveCount.Text = dal.countDonors("O+");
+            lblOnegativeCount.Text = dal.countDonors("O-");
+            lblApositiveCount.Text = dal.countDonors("A+");
+            lblAnegativeCount.Text = dal.countDonors("A-");
+            lblBpositiveCount.Text = dal.countDonors("B+");
+            lblBnegativeCount.Text = dal.countDonors("B-");
+            lblABpositiveCount.Text = dal.countDonors("AB+");
+            lblABnegativeCount.Text = dal.countDonors("AB-");
         }
 
         private void label23_Click(object sender, EventArgs e)
@@ -61,6 +80,12 @@ namespace Blood_Bank
             //Open Manage Donors Form
             frmDonors donors = new frmDonors();
             donors.Show();
+        }
+
+        private void frmhome_Activated(object sender, EventArgs e)
+        {
+            //Call allDonorCpunt Method
+            allDonorCount();
         }
     }
 }

@@ -623,6 +623,7 @@
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
+            this.Activated += new System.EventHandler(this.frmhome_Activated);
             this.Load += new System.EventHandler(this.frmhome_Load);
             this.menuStripTop.ResumeLayout(false);
             this.menuStripTop.PerformLayout();
