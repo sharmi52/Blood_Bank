@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace Blood_Bank
 {
-    public partial class frmhome : Form
+    public partial class frmHome : Form
     {
-        public frmhome()
+        public frmHome()
         {
             InitializeComponent();
         }
