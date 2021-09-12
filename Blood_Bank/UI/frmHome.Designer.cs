@@ -68,7 +68,7 @@
             this.label21 = new System.Windows.Forms.Label();
             this.lblABnegativeCount = new System.Windows.Forms.Label();
             this.lblABnegative = new System.Windows.Forms.Label();
-            this.dgvDhoners = new System.Windows.Forms.DataGridView();
+            this.dgvDonors = new System.Windows.Forms.DataGridView();
             this.lblSearch = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.pictureBoxClose = new System.Windows.Forms.PictureBox();
@@ -85,7 +85,7 @@
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDhoners)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDonors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -523,15 +523,15 @@
             this.lblABnegative.TabIndex = 0;
             this.lblABnegative.Text = "AB-";
             // 
-            // dgvDhoners
+            // dgvDonors
             // 
-            this.dgvDhoners.BackgroundColor = System.Drawing.Color.PaleGreen;
-            this.dgvDhoners.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDhoners.Location = new System.Drawing.Point(462, 120);
-            this.dgvDhoners.Name = "dgvDhoners";
-            this.dgvDhoners.Size = new System.Drawing.Size(644, 278);
-            this.dgvDhoners.TabIndex = 10;
-            this.dgvDhoners.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDhoners_CellContentClick);
+            this.dgvDonors.BackgroundColor = System.Drawing.Color.PaleGreen;
+            this.dgvDonors.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDonors.Location = new System.Drawing.Point(462, 120);
+            this.dgvDonors.Name = "dgvDonors";
+            this.dgvDonors.Size = new System.Drawing.Size(644, 278);
+            this.dgvDonors.TabIndex = 10;
+            this.dgvDonors.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDhoners_CellContentClick);
             // 
             // lblSearch
             // 
@@ -551,6 +551,7 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(475, 29);
             this.txtSearch.TabIndex = 12;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // pictureBoxClose
             // 
@@ -606,7 +607,7 @@
             this.Controls.Add(this.pictureBoxClose);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.lblSearch);
-            this.Controls.Add(this.dgvDhoners);
+            this.Controls.Add(this.dgvDonors);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
@@ -645,7 +646,7 @@
             this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDhoners)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDonors)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -696,7 +697,7 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label lblABnegativeCount;
         private System.Windows.Forms.Label lblABnegative;
-        private System.Windows.Forms.DataGridView dgvDhoners;
+        private System.Windows.Forms.DataGridView dgvDonors;
         private System.Windows.Forms.Label lblSearch;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.PictureBox pictureBoxClose;

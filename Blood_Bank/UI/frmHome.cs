@@ -27,6 +27,10 @@ namespace Blood_Bank
             //Load all the Blood Donors Count When Form is Loaded
             //Call allDonorCountMethod
             allDonorCount();
+
+            //Display all the Donors
+            DataTable dt = dal.Select();
+            dgvDonors.DataSource = dt;
         }
 
         public void allDonorCount()
@@ -86,6 +90,26 @@ namespace Blood_Bank
         {
             //Call allDonorCount Method
             allDonorCount();
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            //Get the Keywords from the Search TextBox
+            string keywords = txtSearch.Text;
+
+            //Check Whether the TextBox is Empty or Not
+            if(keywords != null)
+            {
+                //Filter the Donors based on Keywords
+                DataTable dt = dal.Search(keywords);
+                dgvDonors.DataSource = dt;
+            }
+            else
+            {
+                //Display all the Donors
+                DataTable dt = dal.Select();
+                dgvDonors.DataSource = dt;
+            }
         }
     }
 }

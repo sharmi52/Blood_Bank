@@ -272,6 +272,45 @@ namespace Blood_Bank.DAL
             return donors;
         }
         #endregion
+        #region Method to Search Donors
+        public DataTable Search(string keywords)
+        {
+            //1. SQL Connection to Connect Database
+            SqlConnection conn = new SqlConnection(myconnstrng);
+
+            //2. Create Data Table to Hold the data Temporarily
+            DataTable dt = new DataTable();
+
+            try
+            {
+                //Write the Code to Search Donors based on Keywords Typed on TextBox
+                //Write SQL Query to Search Donors from Database
+                string sql = "SELECT * FROM tbl_donors WHERE donor_id LIKE '%" + keywords + "%' OR first_name LIKE '%" + keywords + "%' OR last_name LIKE '" + keywords + "' OR email LIKE '%"+ keywords +"%' OR blood_group LIKE '"+keywords+"'";
+
+                //Create SQL Command to Execute the Query
+                SqlCommand cmd = new SqlCommand(sql, conn);
+
+                //SQLDataAdapter to Get the Data from Database
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+
+                //Open Database Connection
+                conn.Open();
+                //Pass the Data from Adapter to Datatable
+                adapter.Fill(dt);
+            }
+            catch (Exception ex)
+            {
+                //Display Error Message If there's any Exceptional Errors
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                //Close the Database  Connection
+                conn.Close();
+            }
+            return dt;
+        }
+        #endregion
 
     }
 
