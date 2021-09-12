@@ -84,7 +84,7 @@ namespace Blood_Bank
 
         private void frmhome_Activated(object sender, EventArgs e)
         {
-            //Call allDonorCpunt Method
+            //Call the allDonorCount Method
             allDonorCount();
         }
     }
