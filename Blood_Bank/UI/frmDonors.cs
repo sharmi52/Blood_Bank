@@ -23,6 +23,7 @@ namespace Blood_Bank.UI
         // Create Objec of Donor BLL and Donor DAL
         donorBLL d = new donorBLL();
         donorDAL dal = new donorDAL();
+        userDAL udal = new userDAL();
 
         //Global Variable for Image
         string imageName = "no-image.jpg";
@@ -45,7 +46,12 @@ namespace Blood_Bank.UI
             d.contact = txtContact.Text;
             d.address = txtAddress.Text;
             d.added_date = DateTime.Now;
-            d.added_by = 1;  //TODO: Get the ID of Logged in User
+
+            //Get the ID of Logged In User
+            string loggedInUser = frmLogin.loggedInUser;
+            userBLL usr = udal.GetIDFromUsername(loggedInUser);
+
+            d.added_by = usr.user_id;  //TODO: Get the ID of Logged in User
             d.image_name = imageName;
 
             //Step 2: Inserting Data into Database
@@ -148,7 +154,11 @@ namespace Blood_Bank.UI
             d.blood_group = cmbBloodGroup.Text;
             d.contact = txtContact.Text;
             d.address = txtAddress.Text;
-            d.added_by = 1;  //TODO: Get the ID of Logged in User
+            // Get the ID of Logged In User
+            string loggedInUser = frmLogin.loggedInUser;
+            userBLL usr = udal.GetIDFromUsername(loggedInUser);
+
+            d.added_by = usr.user_id;
             d.image_name = imageName;
 
             // Create a Boolean Variable to Check Whether the Data is Updated Successfully or not

@@ -23,6 +23,9 @@ namespace Blood_Bank.UI
         loginBLL l = new loginBLL();
         loginDAL dal = new loginDAL();
 
+        //Create a static String Method to save the Username
+        public static string loggedInUser;
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             //Write the Code to Close the Application
@@ -45,6 +48,9 @@ namespace Blood_Bank.UI
                 //Login Success
                 //Display Success Message
                 MessageBox.Show("Login Successful.");
+
+                //Save the Username in loggedInUser Static Method
+                loggedInUser = l.username;
 
                 //Display home form
                 frmHome home = new frmHome();
